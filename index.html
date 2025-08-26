@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Quote - Step 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <header>
+                <h1>Welcome!</h1>
+                <p>Select a service and provide your info to get started.</p>
+            </header>
+            <form id="prospect-form">
+                <section>
+                    <h2>Step 1: Choose Your Service</h2>
+                    <div class="service-selection">
+                        <label class="service-option">
+                            <input type="radio" name="serviceChoice" value="Solar" required>
+                            <div class="service-content">
+                                <span>☀️</span>
+                                <span>Solar</span>
+                            </div>
+                        </label>
+                        <label class="service-option">
+                            <input type="radio" name="serviceChoice" value="Roofing" required>
+                            <div class="service-content">
+                                <span>🏠</span>
+                                <span>Roofing</span>
+                            </div>
+                        </label>
+                        <label class="service-option">
+                            <input type="radio" name="serviceChoice" value="HVAC" required>
+                            <div class="service-content">
+                                <span>💨</span>
+                                <span>HVAC</span>
+                            </div>
+                        </label>
+                        <label class="service-option">
+                            <input type="radio" name="serviceChoice" value="Smart Home" required>
+                            <div class="service-content">
+                                <span>🤖</span>
+                                <span>Smart Home</span>
+                            </div>
+                        </label>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Step 2: Tell Us About Yourself</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" placeholder="123 Main St" required>
+                    </div>
+                </section>
+                
+                <div class="form-footer">
+                     <button type="submit" class="button">Continue</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

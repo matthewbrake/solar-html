@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Details - Step 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <header>
+                <h1>Solar Details</h1>
+                <p>Just a few more details to help us prepare for your consultation.</p>
+            </header>
+            <form id="solar-details-form">
+                <section>
+                    <div class="form-group">
+                        <label for="monthlyBill">Average Monthly Electric Bill: <span id="bill-value">$150</span></label>
+                        <input type="range" id="monthlyBill" name="monthlyBill" min="50" max="1000" step="10" value="150">
+                    </div>
+                </section>
+                <section>
+                    <label>What is your approximate credit score?</label>
+                    <div class="choice-grid">
+                        <label class="choice-option">
+                            <input type="radio" name="creditScore" value="excellent" required>
+                            <div>Excellent (720+)</div>
+                        </label>
+                         <label class="choice-option">
+                            <input type="radio" name="creditScore" value="good" required>
+                            <div>Good (640-719)</div>
+                        </label>
+                         <label class="choice-option">
+                            <input type="radio" name="creditScore" value="fair" required>
+                            <div>Fair (600-639)</div>
+                        </label>
+                         <label class="choice-option">
+                            <input type="radio" name="creditScore" value="poor" required>
+                            <div>Needs Work (&lt;600)</div>
+                        </label>
+                    </div>
+                </section>
+                 <section>
+                    <label>How soon are you looking to start?</label>
+                    <div class="choice-grid-small">
+                        <label class="choice-option">
+                            <input type="radio" name="interestLevel" value="asap" required>
+                            <div>Immediately</div>
+                        </label>
+                         <label class="choice-option">
+                            <input type="radio" name="interestLevel" value="1-3m" required>
+                            <div>1-3 Months</div>
+                        </label>
+                         <label class="choice-option">
+                            <input type="radio" name="interestLevel" value="researching" required>
+                            <div>Just Researching</div>
+                        </label>
+                    </div>
+                </section>
+                <div class="form-footer">
+                    <button type="submit" class="button">Continue</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
